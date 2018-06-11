@@ -1,0 +1,4 @@
+#define WIFI_SSID "ex:wifi" SSID of your Wi-Fi
+#define WIFI_PASSWORD  "ex:1234" Password of your Wi-Fi
+#define NMEA_HOST  "IP_Host" //IP adress of your NMEA	multiplex transmitter
+#define NMEA_PORT //Port of your NMEA multiplex transmitter
