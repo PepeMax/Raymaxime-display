@@ -1,4 +1,4 @@
-#include <Arduino.h>
+#include <M5Stack.h>
 #include <Connection_Network.h>
 #include <WiFiParameters.h>
 
@@ -7,6 +7,7 @@ unsigned long previousMillis = millis();
 
 void setup() {
   Serial.begin(115200);
+
 }
 
 void loop() {
