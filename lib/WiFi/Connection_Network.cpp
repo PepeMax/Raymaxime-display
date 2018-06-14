@@ -11,9 +11,6 @@ void ConnecteToWiFi(char* ssid, char* password ) {
       i = 0;
     }
   }
-}
-
-
-bool isWifiConnected(){
-  return WiFi.status() == WL_CONNECTED;
+  Serial.print("WiFi connected");
+  Serial.print(WiFi.localIP());
 }
