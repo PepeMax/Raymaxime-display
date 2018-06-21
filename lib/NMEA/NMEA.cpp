@@ -3,6 +3,7 @@
 
 char* tmpNmeaSentence;
 
+
 void initNMEA() {
   tmpNmeaSentence = (char*)malloc(MAX_NMEA_LENGHT*sizeof(char));
 }
