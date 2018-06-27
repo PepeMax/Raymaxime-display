@@ -7,11 +7,14 @@ Step 1 : Go to **Raymaxime-display** folder and **src** folder and modify **WiFi
 Command for Linux :
 
 > nano ~/Raymaxime-display/src/WiFiParameters.h
->
-> #define WIFI_SSID "Your_SSID"		*ex: Wifihome*
-> #define WIFI_PASSWORD  "Your_Pass"		*ex: Mypassofmyhome22*
-> #define TCP_HOST  "Your_TCP_Host"		*ex: 192.168.0.2*
-> #define TCP_PORT Your_Port		*ex: 11111*
+
+ '''#define WIFI_SSID "Your_SSID"		*ex: Wifihome*
+
+ #define WIFI_PASSWORD  "Your_Pass"		*ex: Mypassofmyhome22*
+
+ #define TCP_HOST  "Your_TCP_Host"		*ex: 192.168.0.2*
+ 
+ #define TCP_PORT Your_Port		*ex: 11111*'''
 
 
 ## Controling autopilot :
