@@ -25,9 +25,8 @@ void loop() {
   if (M5.BtnA.wasReleased()) {
     ap_enable();
   }
-  if (M5.BtnB.wasReleased()) {
+  if (M5.BtnC.wasReleased()) {
     ap_disable();
   }
-
   M5.update();
 }

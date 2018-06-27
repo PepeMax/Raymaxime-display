@@ -39,8 +39,3 @@ void Display_WiFi_Connected() {
   M5.Lcd.setCursor(0, 120);
   M5.Lcd.print("M5Stack has been connected");
 }
-
-
-/*  M5.Lcd.fillRoundRect(0, 0, 320, 240, 7, 0xffff);
-M5.lcd.drawLine(160, 0, 160, 240, 0x00);
-M5.lcd.drawLine(0, 120, 160, 120, 0x00);*/
