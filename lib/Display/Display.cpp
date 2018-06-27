@@ -1,8 +1,8 @@
 #include <M5Stack.h>
 
 void initDisplay() {
-  M5.Lcd.fillRoundRect(0, 0, 320, 240, 7, 0xffff);
-  M5.Lcd.setTextColor(0x7bef);
+  M5.Lcd.clear(BLACK);
+  M5.Lcd.setTextColor(WHITE);
   M5.Lcd.setTextSize(2);
 }
 
@@ -23,3 +23,24 @@ void display_text(String text_to_display, int zone) {
     M5.Lcd.println(text_to_display);
   }
 }
+
+void Display_Connexion_WiFi(char* ssid) {
+  M5.Lcd.clear(BLACK);
+  M5.Lcd.setTextSize(2);
+  M5.Lcd.setCursor(50, 110);
+  M5.Lcd.println("Try to connecte to");
+  M5.Lcd.setCursor(75, 140);
+  M5.Lcd.println(ssid);
+}
+
+void Display_WiFi_Connected() {
+  M5.Lcd.clear(BLACK);
+  M5.Lcd.setTextSize(2);
+  M5.Lcd.setCursor(0, 120);
+  M5.Lcd.print("M5Stack has been connected");
+}
+
+
+/*  M5.Lcd.fillRoundRect(0, 0, 320, 240, 7, 0xffff);
+M5.lcd.drawLine(160, 0, 160, 240, 0x00);
+M5.lcd.drawLine(0, 120, 160, 120, 0x00);*/

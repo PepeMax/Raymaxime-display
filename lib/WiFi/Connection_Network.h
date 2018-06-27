@@ -1,8 +1,12 @@
 #include <WiFi.h>
 
-void ConnecteToWiFi(char* ssid, char* password );
-void ConnectToNmeaSocket(char* nmea_host, int nmea_port);
-
 bool isWifiConnected();
-bool nmeaConnected();
+
+void ConnecteToWiFi(char* ssid, char* password);
+void ConnectToTCPSocket(char* tcp_host, int tcp_port);
+
+
+void ap_enable();
+void ap_disable();
+
 String readNmeaLine();
