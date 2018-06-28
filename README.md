@@ -1,5 +1,5 @@
 # Raymaxime-display
-
+![Logo Raymaxime](../docs/Raymaxime_logo.png)
 
 ## Get started :
 Step 1 : Go to **Raymaxime-display** folder and **src** folder and modify **WiFiParameters.h** file.
