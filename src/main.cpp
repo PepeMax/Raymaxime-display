@@ -1,15 +1,16 @@
 #include <M5Stack.h>
 #include <Display.h>
-#include <Connection_Network.h>
+#include <Network_Management.h>
 #include <WiFiParameters.h>
 #include <NMEA.h>
-
-String NMEA_Line;
-String NMEA_Header;
+#include <SnigalK_Sentences.h>
+#include <Setup.h>
 
 void setup() {
+
   Serial.begin(115200);
   M5.begin();
+  initDisplay();
   initNMEA();
 }
 
@@ -23,10 +24,8 @@ void loop() {
   }
 
   if (M5.BtnA.wasReleased()) {
-    ap_enable();
   }
   if (M5.BtnC.wasReleased()) {
-    ap_disable();
   }
   M5.update();
 }
