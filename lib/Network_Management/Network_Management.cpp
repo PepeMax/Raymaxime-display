@@ -58,7 +58,7 @@ float get_json_value(String name_value) {
   }
 }
 
-void set_json_sentence(String name_json_set, String value_json_set){
+void set_json_sentence_float(String name_json_set, float value_json_set){
   JsonObject& send_json_set = jsonBuffer.createObject();
   send_json_set["method"] = "set";
   send_json_set["name"] = name_json_set;
@@ -66,4 +66,15 @@ void set_json_sentence(String name_json_set, String value_json_set){
   String set_output;
   send_json_set.printTo(set_output);
   client.println(set_output);
+}
+
+void set_json_sentence_String(String name_json_set, bool value_json_set) {
+  JsonObject& send_json_set = jsonBuffer.createObject();
+  send_json_set["method"] = "set";
+  send_json_set["name"] = name_json_set;
+  send_json_set["value"] = value_json_set;
+  String set_output;
+  send_json_set.printTo(set_output);
+  client.println(set_output);
+  Serial.println(set_output);
 }

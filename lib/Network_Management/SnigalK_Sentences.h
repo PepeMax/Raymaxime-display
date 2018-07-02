@@ -6,6 +6,3 @@ const char* PILOT_MODE = "ap.mode";
 const char* PILOTE_STATUS = "ap.enabled";
 
 const char* HEADING_TARGET = "ap.heading_command";
-
-const char* T = "true";
-const char* F = "false";
