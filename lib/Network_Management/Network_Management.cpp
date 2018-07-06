@@ -76,5 +76,4 @@ void set_json_sentence_String(String name_json_set, bool value_json_set) {
   String set_output;
   send_json_set.printTo(set_output);
   client.println(set_output);
-  Serial.println(set_output);
 }

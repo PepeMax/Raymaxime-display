@@ -36,7 +36,6 @@ void loop() {
   Wind_speed = get_json_value(WIND_SPEED);
   Target_heading = get_json_value(HEADING_TARGET);
 
-
   if (M5.BtnB.wasReleased()) {
     if (status_pilot == false) {
       set_json_sentence_String(PILOTE_STATUS, true);
@@ -59,7 +58,7 @@ void loop() {
       is_btnA_Pressed_1500 = true;
     }
   }
-  if (M5.BtnA.pressedFor(3000)) {
+  if (M5.BtnA.pressedFor(5000)) {
     if (!is_btnA_Pressed_5000) {
       set_json_sentence_float(HEADING_TARGET, Target_heading + TACK);
       is_btnA_Pressed_5000 = true;
@@ -76,7 +75,7 @@ void loop() {
       is_btnC_Pressed_1500 = true;
     }
   }
-  if (M5.BtnC.pressedFor(3000)) {
+  if (M5.BtnC.pressedFor(5000)) {
     if (!is_btnC_Pressed_5000) {
       set_json_sentence_float(HEADING_TARGET, Target_heading - TACK);
       is_btnC_Pressed_5000 = true;
